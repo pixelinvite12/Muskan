@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gupta's Art – Homework & Creative Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="logo-wrap">
+      <div class="logo-icon">
+        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="30" cy="30" r="28" fill="#1a1a2e" stroke="#f4a261" stroke-width="2.5"/>
+          <path d="M18 38 Q22 20 30 18 Q38 16 40 28 Q42 38 30 40 Q22 42 20 36" stroke="#f4a261" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <circle cx="30" cy="29" r="4" fill="#f4a261"/>
+          <path d="M30 14 L30 10 M30 48 L30 52 M14 30 L10 30 M46 30 L50 30" stroke="#e76f51" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M22 22 L18 18 M38 38 L42 42 M38 22 L42 18 M22 38 L18 42" stroke="#e76f51" stroke-width="1.2" stroke-linecap="round"/>
+          <text x="50%" y="54" font-family="serif" font-size="8" fill="#f4a261" text-anchor="middle" font-weight="bold">G·A</text>
+        </svg>
+      </div>
+      <span class="logo-text">Gupta's Art</span>
+    </div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#order" class="nav-cta">Order Now</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-art">
+      <div class="floating-shape s1"></div>
+      <div class="floating-shape s2"></div>
+      <div class="floating-shape s3"></div>
+      <div class="leaf-cluster top-left">
+        <svg viewBox="0 0 200 200" fill="none">
+          <ellipse cx="60" cy="40" rx="30" ry="15" fill="#2d6a4f" transform="rotate(-30 60 40)"/>
+          <ellipse cx="100" cy="60" rx="35" ry="14" fill="#40916c" transform="rotate(-15 100 60)"/>
+          <ellipse cx="50" cy="80" rx="28" ry="12" fill="#1b4332" transform="rotate(-45 50 80)"/>
+          <ellipse cx="140" cy="30" rx="32" ry="13" fill="#52b788" transform="rotate(10 140 30)"/>
+          <ellipse cx="160" cy="70" rx="25" ry="11" fill="#2d6a4f" transform="rotate(25 160 70)"/>
+          <line x1="60" y1="40" x2="30" y2="120" stroke="#1b4332" stroke-width="2"/>
+          <line x1="100" y1="60" x2="80" y2="130" stroke="#1b4332" stroke-width="2"/>
+        </svg>
+      </div>
+      <div class="leaf-cluster bottom-right">
+        <svg viewBox="0 0 200 200" fill="none">
+          <ellipse cx="140" cy="160" rx="30" ry="15" fill="#2d6a4f" transform="rotate(30 140 160)"/>
+          <ellipse cx="100" cy="140" rx="35" ry="14" fill="#40916c" transform="rotate(15 100 140)"/>
+          <ellipse cx="150" cy="120" rx="28" ry="12" fill="#1b4332" transform="rotate(45 150 120)"/>
+          <ellipse cx="60" cy="170" rx="32" ry="13" fill="#52b788" transform="rotate(-10 60 170)"/>
+          <line x1="140" y1="160" x2="170" y2="80" stroke="#1b4332" stroke-width="2"/>
+          <line x1="100" y1="140" x2="120" y2="70" stroke="#1b4332" stroke-width="2"/>
+        </svg>
+      </div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">✦ Handcrafted with Love ✦</span>
+      <h1 class="hero-title">Your Homework,<br/><em>Our Masterpiece.</em></h1>
+      <p class="hero-sub">Professional project files, assignments, cover pages & more — beautifully crafted, delivered on time. <strong>90s nostalgia, modern quality!</strong></p>
+      <div class="hero-btns">
+        <a href="#order" class="btn-primary">Place an Order</a>
+        <a href="#services" class="btn-ghost">View Services</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="art-showcase">
+        <div class="showcase-card card-1">
+          <div class="sc-icon">📚</div>
+          <span>Project Files</span>
+        </div>
+        <div class="showcase-card card-2">
+          <div class="sc-icon">🎨</div>
+          <span>Cover Pages</span>
+        </div>
+        <div class="showcase-card card-3">
+          <div class="sc-icon">📋</div>
+          <span>Assignments</span>
+        </div>
+        <div class="showcase-card card-4">
+          <div class="sc-icon">🗂️</div>
+          <span>Scrapbooks</span>
+        </div>
+        <div class="center-badge">
+          <span>Gupta's</span>
+          <strong>ART</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="section-header">
+      <span class="tag-line">✦ What We Make ✦</span>
+      <h2>Our Services</h2>
+      <p>Tap any service to place your order instantly!</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card" onclick="openOrder('Holiday Homework')">
+        <div class="service-img homework-img">
+          <div class="art-illustration">
+            <div class="art-book">📖</div>
+            <div class="art-star s1">⭐</div>
+            <div class="art-star s2">✨</div>
+            <div class="art-pencil">✏️</div>
+          </div>
+        </div>
+        <div class="service-info">
+          <h3>Holiday Homework</h3>
+          <p>Get your holiday assignments done beautifully — neat, creative, and well-presented.</p>
+          <div class="price-tag">From ₹30/page</div>
+          <button class="order-btn">Order Now →</button>
+        </div>
+      </div>
+
+      <div class="service-card" onclick="openOrder('Project File')">
+        <div class="service-img project-img">
+          <div class="art-illustration">
+            <div class="art-book">📁</div>
+            <div class="art-star s1">🌟</div>
+            <div class="art-star s2">💫</div>
+            <div class="art-pencil">📐</div>
+          </div>
+        </div>
+        <div class="service-info">
+          <h3>Project Files</h3>
+          <p>Complete project files with index, content pages, decorative borders and more.</p>
+          <div class="price-tag">From ₹40/page</div>
+          <button class="order-btn">Order Now →</button>
+        </div>
+      </div>
+
+      <div class="service-card" onclick="openOrder('Assignment')">
+        <div class="service-img assignment-img">
+          <div class="art-illustration">
+            <div class="art-book">📝</div>
+            <div class="art-star s1">⭐</div>
+            <div class="art-star s2">✨</div>
+            <div class="art-pencil">🖊️</div>
+          </div>
+        </div>
+        <div class="service-info">
+          <h3>Assignments</h3>
+          <p>Well-written, neat handwritten or printed assignments with proper formatting.</p>
+          <div class="price-tag">From ₹25/page</div>
+          <button class="order-btn">Order Now →</button>
+        </div>
+      </div>
+
+      <div class="service-card" onclick="openOrder('Cover Page')">
+        <div class="service-img cover-img">
+          <div class="art-illustration">
+            <div class="art-book">🖼️</div>
+            <div class="art-star s1">🌸</div>
+            <div class="art-star s2">🎨</div>
+            <div class="art-pencil">🖌️</div>
+          </div>
+        </div>
+        <div class="service-info">
+          <h3>Cover Pages</h3>
+          <p>Stunning, eye-catching cover pages that make your project stand out in class.</p>
+          <div class="price-tag">From ₹50/page</div>
+          <button class="order-btn">Order Now →</button>
+        </div>
+      </div>
+
+      <div class="service-card" onclick="openOrder('Decorative Sheet')">
+        <div class="service-img deco-img">
+          <div class="art-illustration">
+            <div class="art-book">🌺</div>
+            <div class="art-star s1">🌼</div>
+            <div class="art-star s2">🍃</div>
+            <div class="art-pencil">🎭</div>
+          </div>
+        </div>
+        <div class="service-info">
+          <h3>Decorative Sheets</h3>
+          <p>Beautiful decorative pages with borders, patterns and designs for your files.</p>
+          <div class="price-tag">From ₹35/page</div>
+          <button class="order-btn">Order Now →</button>
+        </div>
+      </div>
+
+      <div class="service-card" onclick="openOrder('Scrapbook / Poster')">
+        <div class="service-img scrap-img">
+          <div class="art-illustration">
+            <div class="art-book">📌</div>
+            <div class="art-star s1">🗞️</div>
+            <div class="art-star s2">🎪</div>
+            <div class="art-pencil">✂️</div>
+          </div>
+        </div>
+        <div class="service-info">
+          <h3>Scrapbook & Posters</h3>
+          <p>Creative scrapbooks and eye-catching posters for school events and projects.</p>
+          <div class="price-tag">From ₹80/piece</div>
+          <button class="order-btn">Order Now →</button>
+        </div>
+      </div>
+
+      <div class="service-card" onclick="openOrder('Model')">
+        <div class="service-img model-img">
+          <div class="art-illustration">
+            <div class="art-book">🏗️</div>
+            <div class="art-star s1">🔧</div>
+            <div class="art-star s2">⚙️</div>
+            <div class="art-pencil">🧱</div>
+          </div>
+        </div>
+        <div class="service-info">
+          <h3>Models</h3>
+          <p>3D models and working science projects crafted by hand for your school exhibitions.</p>
+          <div class="price-tag">From ₹200/model</div>
+          <button class="order-btn">Order Now →</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-header light">
+      <span class="tag-line">✦ Simple Process ✦</span>
+      <h2>How It Works</h2>
+    </div>
+    <div class="steps-row">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-icon">🛒</div>
+        <h4>Choose Service</h4>
+        <p>Tap the service you need from our list above</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-icon">📤</div>
+        <h4>Upload Details</h4>
+        <p>Fill the order form & upload your assignment details</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-icon">💬</div>
+        <h4>We Contact You</h4>
+        <p>We reach out on WhatsApp or Instagram to confirm</p>
+      </div>
+      <div class="step-arrow">→</div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-icon">🎁</div>
+        <h4>Receive Work</h4>
+        <p>Get your beautiful, ready-to-submit work delivered!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ORDER MODAL ===== -->
+  <div class="modal-overlay" id="orderModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeOrder()">✕</button>
+      <div class="modal-header">
+        <div class="modal-logo">🎨</div>
+        <h2>Place Your Order</h2>
+        <p class="modal-service-name" id="modalServiceName">Holiday Homework</p>
+      </div>
+
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" id="customerName" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" id="customerPhone" placeholder="+91 XXXXX XXXXX" />
+        </div>
+
+        <div class="form-group">
+          <label>Class / Grade</label>
+          <select id="customerClass">
+            <option value="">Select your class</option>
+            <option>Class 1 - 5 (Primary)</option>
+            <option>Class 6 - 8 (Middle)</option>
+            <option>Class 9 - 10 (Secondary)</option>
+            <option>Class 11 - 12 (Senior)</option>
+            <option>College / University</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Subject / Topic</label>
+          <input type="text" id="customerSubject" placeholder="e.g. Science, History, English..." />
+        </div>
+
+        <div class="form-group">
+          <label>Number of Pages / Quantity *</label>
+          <input type="number" id="customerPages" placeholder="e.g. 5" min="1" oninput="calculateAmount()" />
+        </div>
+
+        <div class="form-group">
+          <label>Upload Assignment / Reference (optional)</label>
+          <div class="file-upload-box" id="fileUploadBox">
+            <input type="file" id="fileUpload" accept="image/*,.pdf,.doc,.docx" onchange="handleFileUpload(event)" />
+            <label for="fileUpload" class="file-label">
+              <span class="file-icon">📎</span>
+              <span id="fileText">Click to upload image or PDF</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Special Instructions</label>
+          <textarea id="customerNotes" rows="3" placeholder="Any special requirements, deadline, style preference..."></textarea>
+        </div>
+
+        <div class="amount-display" id="amountDisplay" style="display:none;">
+          <div class="amount-row">
+            <span>Estimated Amount:</span>
+            <strong id="estimatedAmount">₹0</strong>
+          </div>
+          <small>* Final amount confirmed on WhatsApp</small>
+        </div>
+
+        <div class="send-via-label">Send order via:</div>
+        <div class="order-actions">
+          <button class="btn-whatsapp" onclick="sendToWhatsApp()">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Send via WhatsApp
+          </button>
+          <button class="btn-instagram" onclick="sendToInstagram()">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Send via Instagram
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="f-logo">
+          <svg viewBox="0 0 60 60" fill="none" width="40" height="40">
+            <circle cx="30" cy="30" r="28" fill="#1a1a2e" stroke="#f4a261" stroke-width="2.5"/>
+            <path d="M18 38 Q22 20 30 18 Q38 16 40 28 Q42 38 30 40 Q22 42 20 36" stroke="#f4a261" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+            <circle cx="30" cy="29" r="4" fill="#f4a261"/>
+            <text x="50%" y="54" font-family="serif" font-size="8" fill="#f4a261" text-anchor="middle" font-weight="bold">G·A</text>
+          </svg>
+        </div>
+        <div>
+          <strong>Gupta's Art</strong>
+          <p>Handcrafted creative work for students</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="https://wa.me/917860142874" target="_blank">📱 WhatsApp</a>
+        <a href="https://www.instagram.com/pixel_invitess/" target="_blank">📸 Instagram</a>
+      </div>
+      <div class="footer-copy">
+        © 2024 Gupta's Art · Made with ❤️
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/917860142874" class="float-wa" target="_blank" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52 -.075-.149-.669-1.612-.916-2.207 -.242-.579 -.487 -.5 -.669 -.51 -.173 -.008 -.371 -.01 -.57 -.01 -.198 0 -.52 .074 -.792 .372 -.272 .297 -1.04 1.016 -1.04 2.479 0 1.462 1.065 2.875 １.２１３ 3.0７４ .１４９ .１９８ ２．０９６ ３．２ ５．０７７ ４．４８７ .７０９ .３０６ １．２６２ .４８９ １．６９４ .６２５ .７１２ .２２７ １．３６ .１９５ １．８７１ .１１８ .５７１ -.０８５ １．７５８ -.７１９ ２．００６ -１．４１３ .２４８ -.６９４ .２４８ -１．２８９ .１７３ -１．４１３ -.０７４ -.₁₂４ -.₂７₂ -.₁₉₈ -.₅₇ -."/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
